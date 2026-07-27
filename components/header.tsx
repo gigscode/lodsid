@@ -26,7 +26,7 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-3xl md:text-4xl font-black bg-gradient-to-r from-neon-purple to-neon-cyan bg-clip-text text-transparent hover:opacity-80 transition-all duration-300 tracking-tight hover:scale-110"
+          className="text-3xl md:text-4xl font-black text-blue-600 hover:text-blue-700 transition-all duration-300 tracking-tight hover:scale-110"
         >
           LordSid
         </a>
@@ -49,21 +49,21 @@ export default function Header() {
               href="https://x.com/LordSid07"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 hover:bg-neon-purple/20 rounded-lg transition-all duration-300 hover-glow hover:scale-110"
+              className="p-2 hover:bg-blue-100 rounded-lg transition-all duration-300 hover:scale-110"
             >
-              <Share2 size={20} className="text-neon-cyan" />
+              <Share2 size={20} className="text-blue-600" />
             </a>
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 hover:bg-neon-purple/20 rounded-lg transition-all duration-300 hover-glow"
+              className="p-2 hover:bg-purple-100 rounded-lg transition-all duration-300 hover:scale-110"
             >
-              <Send size={20} className="text-neon-purple" />
+              <Send size={20} className="text-purple-600" />
             </a>
             <a
-              href="mailto:contact@lodsid.com"
-              className="px-4 py-2 bg-gradient-to-r from-neon-purple to-neon-cyan text-background rounded-lg font-semibold hover:shadow-lg hover:shadow-neon-purple/50 transition-all duration-300"
+              href="https://wa.me/07018643642"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/30"
             >
               Get in Touch
             </a>

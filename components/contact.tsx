@@ -13,8 +13,8 @@ export default function Contact() {
 
         <div className="relative z-10 space-y-12">
           <div className="space-y-4 text-center slide-up-fade">
-            <h2 className="text-5xl md:text-7xl font-black tracking-tight">
-              Let&apos;s Create Something <span className="bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">Amazing</span>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-900">
+              Let&apos;s Create Something <span className="text-blue-600">Amazing</span>
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               Whether you have a specific project in mind or just want to explore possibilities, I&apos;m here to help.
@@ -26,15 +26,15 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">
             <a
               href="mailto:hello@lodsid.com"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-cyan/50 hover:bg-neon-cyan/5 transition-all duration-500"
+              className="stagger-item group p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-500"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-neon-cyan/20 rounded-lg group-hover:bg-neon-cyan/30 transition-colors duration-300">
-                  <Mail size={24} className="text-neon-cyan" />
+                <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors duration-300">
+                  <Mail size={24} className="text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1">Email</h3>
-                  <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
+                  <h3 className="text-lg font-bold mb-1 text-slate-900">Email</h3>
+                  <p className="text-slate-600 group-hover:text-slate-900 transition-colors duration-300">
                     hello@lodsid.com
                   </p>
                 </div>
@@ -45,15 +45,15 @@ export default function Contact() {
               href="https://x.com/LordSid07"
               target="_blank"
               rel="noopener noreferrer"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-purple/50 hover:bg-neon-purple/5 transition-all duration-500 hover:scale-105"
+              className="stagger-item group p-8 rounded-2xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-500 hover:scale-105"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-neon-purple/20 rounded-lg group-hover:bg-neon-purple/30 transition-colors duration-300">
-                  <Share2 size={24} className="text-neon-purple" />
+                <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors duration-300">
+                  <Share2 size={24} className="text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1">Twitter</h3>
-                  <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
+                  <h3 className="text-lg font-bold mb-1 text-slate-900">Twitter</h3>
+                  <p className="text-slate-600 group-hover:text-slate-900 transition-colors duration-300">
                     @LordSid07
                   </p>
                 </div>
@@ -64,15 +64,15 @@ export default function Contact() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-pink/50 hover:bg-neon-pink/5 transition-all duration-500"
+              className="stagger-item group p-8 rounded-2xl border border-slate-200 bg-white hover:border-purple-300 hover:shadow-lg transition-all duration-500"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-neon-pink/20 rounded-lg group-hover:bg-neon-pink/30 transition-colors duration-300">
-                  <Send size={24} className="text-neon-pink" />
+                <div className="p-3 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors duration-300">
+                  <Send size={24} className="text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1">GitHub</h3>
-                  <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
+                  <h3 className="text-lg font-bold mb-1 text-slate-900">GitHub</h3>
+                  <p className="text-slate-600 group-hover:text-slate-900 transition-colors duration-300">
                     github.com/lodsid
                   </p>
                 </div>
@@ -83,15 +83,15 @@ export default function Contact() {
               href="https://wa.me/07018643642"
               target="_blank"
               rel="noopener noreferrer"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-orange/50 hover:bg-neon-orange/5 transition-all duration-500 hover:scale-105"
+              className="stagger-item group p-8 rounded-2xl border border-slate-200 bg-white hover:border-green-300 hover:shadow-lg transition-all duration-500 hover:scale-105"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-neon-orange/20 rounded-lg group-hover:bg-neon-orange/30 transition-colors duration-300">
-                  <Phone size={24} className="text-neon-orange" />
+                <div className="p-3 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors duration-300">
+                  <Phone size={24} className="text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1">WhatsApp</h3>
-                  <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
+                  <h3 className="text-lg font-bold mb-1 text-slate-900">WhatsApp</h3>
+                  <p className="text-slate-600 group-hover:text-slate-900 transition-colors duration-300">
                     +234 701 864 3642
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function Contact() {
               href="https://wa.me/07018643642"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-background font-bold text-lg rounded-lg hover:shadow-xl hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 text-white font-bold text-lg rounded-lg hover:bg-green-700 hover:shadow-xl hover:shadow-green-600/30 transition-all duration-300 hover:scale-105"
             >
               <Phone size={20} />
               Chat on WhatsApp
@@ -114,7 +114,7 @@ export default function Contact() {
               href="https://x.com/LordSid07"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-neon-cyan text-foreground font-bold text-lg rounded-lg hover:bg-neon-cyan/10 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-blue-600 text-blue-600 font-bold text-lg rounded-lg hover:bg-blue-50 transition-all duration-300 hover:scale-105"
             >
               <Share2 size={20} />
               Follow on Twitter

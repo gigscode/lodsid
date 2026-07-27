@@ -1,6 +1,7 @@
 'use client'
 
-import { ExternalLink, Send, Code2 } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const projectsData = [
@@ -9,45 +10,50 @@ const projectsData = [
     title: 'SoPrep - Exam Preparation',
     description: 'Comprehensive exam prep platform with interactive lessons, practice tests, and detailed analytics. Built with modern web technologies for optimal learning experience.',
     tags: ['Next.js', 'React', 'TailwindCSS', 'Education', 'Full-Stack'],
-    image: 'bg-gradient-to-br from-neon-purple/40 to-neon-cyan/40',
+    image: '/projects/soprep.png',
     link: 'https://soprep.app/',
-    color: 'neon-purple',
+    bgColor: 'bg-blue-50',
+    tagColor: 'bg-blue-100 text-blue-700 border-blue-300',
   },
   {
     id: 2,
     title: 'Panaceutics - Pharmaceutical Solutions',
     description: 'Professional pharmaceutical company website showcasing products, research, and industry expertise. Optimized for conversions and client engagement.',
     tags: ['Next.js', 'React', 'Healthcare', 'TypeScript', 'Marketing'],
-    image: 'bg-gradient-to-br from-neon-orange/40 to-neon-pink/40',
+    image: '/projects/panaceutics.png',
     link: 'https://www.panaceutics.org/',
-    color: 'neon-orange',
+    bgColor: 'bg-purple-50',
+    tagColor: 'bg-purple-100 text-purple-700 border-purple-300',
   },
   {
     id: 3,
     title: 'Phytogenix - Agriculture Solutions',
     description: 'Agricultural biotech platform featuring crop innovation, research resources, and industry-leading solutions for modern farming.',
     tags: ['Next.js', 'React', 'Agriculture', 'TailwindCSS', 'B2B'],
-    image: 'bg-gradient-to-br from-neon-cyan/40 to-neon-purple/40',
+    image: '/projects/phytogenix.png',
     link: 'https://www.phytogenix.org/',
-    color: 'neon-cyan',
+    bgColor: 'bg-emerald-50',
+    tagColor: 'bg-emerald-100 text-emerald-700 border-emerald-300',
   },
   {
     id: 4,
     title: 'SecAcad - Security Training',
     description: 'Interactive cybersecurity academy with certification courses, labs, and real-world training scenarios. Deployed on Vercel with streaming capabilities.',
     tags: ['Next.js', 'Vercel', 'Security', 'Education', 'Interactive'],
-    image: 'bg-gradient-to-br from-neon-pink/40 to-neon-orange/40',
+    image: '/projects/secacad.png',
     link: 'https://secacad.vercel.app/',
-    color: 'neon-pink',
+    bgColor: 'bg-rose-50',
+    tagColor: 'bg-rose-100 text-rose-700 border-rose-300',
   },
   {
     id: 5,
     title: 'TizzleShop - E-Commerce',
     description: 'Modern e-commerce platform with seamless shopping experience, secure payments, and intuitive product discovery. Full-stack implementation.',
     tags: ['Next.js', 'Stripe', 'E-Commerce', 'React', 'PostgreSQL'],
-    image: 'bg-gradient-to-br from-neon-cyan/40 to-neon-pink/40',
+    image: '/projects/tizzleshop.png',
     link: 'https://tizzleshop.vercel.app/',
-    color: 'neon-cyan',
+    bgColor: 'bg-amber-50',
+    tagColor: 'bg-amber-100 text-amber-700 border-amber-300',
   },
 ]
 
@@ -58,8 +64,8 @@ export default function Projects() {
     <section id="projects" className="py-20 md:py-32 relative">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <div className="space-y-4 mb-16 slide-up-fade">
-          <h2 className="text-5xl md:text-7xl font-black tracking-tight">
-            Featured <span className="bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">Projects</span>
+          <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-900">
+            Featured <span className="text-blue-600">Projects</span>
           </h2>
           <p className="text-foreground/60 max-w-2xl">
             A selection of recent projects showcasing full-stack capabilities, modern design, and innovative solutions.
@@ -74,28 +80,30 @@ export default function Projects() {
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="relative bg-card border border-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-neon-purple/50">
+              <div className="relative bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:border-slate-300">
                 {/* Project Image */}
-                <div className={`${project.image} w-full h-64 relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <Code2 size={48} className="text-neon-cyan" />
-                  </div>
+                <div className={`${project.bgColor} w-full h-64 relative overflow-hidden`}>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
 
                 {/* Content */}
                 <div className="p-6 md:p-8 space-y-4">
-                  <h3 className="text-xl md:text-2xl font-bold group-hover:text-neon-purple transition-colors duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-foreground/70 leading-relaxed">{project.description}</p>
+                  <p className="text-slate-600 leading-relaxed">{project.description}</p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 bg-neon-purple/10 border border-neon-purple/30 text-neon-purple rounded-full text-sm font-medium hover:bg-neon-purple/20 transition-colors duration-300"
+                        className={`px-3 py-1 border rounded-full text-sm font-medium transition-colors duration-300 ${project.tagColor}`}
                       >
                         {tag}
                       </span>
@@ -103,12 +111,12 @@ export default function Projects() {
                   </div>
 
                   {/* Links */}
-                  <div className="flex gap-3 pt-4 border-t border-border opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="flex gap-3 pt-4 border-t border-slate-200 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-neon-purple to-neon-cyan text-background rounded-lg hover:shadow-lg hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-105 font-semibold"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 transition-all duration-300 hover:scale-105 font-semibold"
                     >
                       <ExternalLink size={16} />
                       View Project
