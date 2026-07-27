@@ -26,9 +26,9 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-2xl font-bold bg-gradient-to-r from-neon-purple to-neon-cyan bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          className="text-3xl md:text-4xl font-black bg-gradient-to-r from-neon-purple to-neon-cyan bg-clip-text text-transparent hover:opacity-80 transition-all duration-300 tracking-tight hover:scale-110"
         >
-          LodSid
+          LordSid
         </a>
 
         <div className="flex items-center gap-8">
@@ -46,10 +46,10 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://twitter.com"
+              href="https://x.com/LordSid07"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 hover:bg-neon-purple/20 rounded-lg transition-all duration-300 hover-glow"
+              className="p-2 hover:bg-neon-purple/20 rounded-lg transition-all duration-300 hover-glow hover:scale-110"
             >
               <Share2 size={20} className="text-neon-cyan" />
             </a>

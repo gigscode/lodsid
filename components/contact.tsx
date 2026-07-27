@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Send, Share2, Link2, MessageSquare } from 'lucide-react'
+import { Mail, Send, Share2, Link2, MessageSquare, Phone } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -13,8 +13,8 @@ export default function Contact() {
 
         <div className="relative z-10 space-y-12">
           <div className="space-y-4 text-center slide-up-fade">
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Let&apos;s Create Something <span className="text-neon-cyan">Amazing</span>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight">
+              Let&apos;s Create Something <span className="bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">Amazing</span>
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               Whether you have a specific project in mind or just want to explore possibilities, I&apos;m here to help.
@@ -42,10 +42,10 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://twitter.com"
+              href="https://x.com/LordSid07"
               target="_blank"
               rel="noopener noreferrer"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-purple/50 hover:bg-neon-purple/5 transition-all duration-500"
+              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-purple/50 hover:bg-neon-purple/5 transition-all duration-500 hover:scale-105"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-neon-purple/20 rounded-lg group-hover:bg-neon-purple/30 transition-colors duration-300">
@@ -54,7 +54,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-bold mb-1">Twitter</h3>
                   <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
-                    @lodsid
+                    @LordSid07
                   </p>
                 </div>
               </div>
@@ -80,19 +80,19 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://wa.me/07018643642"
               target="_blank"
               rel="noopener noreferrer"
-              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-orange/50 hover:bg-neon-orange/5 transition-all duration-500"
+              className="stagger-item group p-8 rounded-2xl border border-border bg-card hover:border-neon-orange/50 hover:bg-neon-orange/5 transition-all duration-500 hover:scale-105"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-neon-orange/20 rounded-lg group-hover:bg-neon-orange/30 transition-colors duration-300">
-                  <Link2 size={24} className="text-neon-orange" />
+                  <Phone size={24} className="text-neon-orange" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1">LinkedIn</h3>
+                  <h3 className="text-lg font-bold mb-1">WhatsApp</h3>
                   <p className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">
-                    /in/lodsid
+                    +234 701 864 3642
                   </p>
                 </div>
               </div>
@@ -102,18 +102,21 @@ export default function Contact() {
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
             <a
-              href="mailto:hello@lodsid.com"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-background font-semibold rounded-lg hover:shadow-xl hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-105"
-            >
-              <MessageSquare size={20} />
-              Start a Conversation
-            </a>
-            <a
-              href="https://twitter.com"
+              href="https://wa.me/07018643642"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-neon-cyan/50 text-foreground font-semibold rounded-lg hover:bg-neon-cyan/10 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-background font-bold text-lg rounded-lg hover:shadow-xl hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-105"
             >
+              <Phone size={20} />
+              Chat on WhatsApp
+            </a>
+            <a
+              href="https://x.com/LordSid07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-neon-cyan text-foreground font-bold text-lg rounded-lg hover:bg-neon-cyan/10 transition-all duration-300 hover:scale-105"
+            >
+              <Share2 size={20} />
               Follow on Twitter
             </a>
           </div>

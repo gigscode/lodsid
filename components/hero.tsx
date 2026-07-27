@@ -13,30 +13,30 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-20 relative z-10">
         <div className="space-y-8 slide-up-fade">
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-balance leading-tight">
+          <div className="space-y-6">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-balance leading-tight tracking-tighter">
               Crafting Digital{' '}
-              <span className="bg-gradient-to-r from-neon-purple via-neon-pink to-neon-cyan bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-neon-purple via-neon-pink to-neon-cyan bg-clip-text text-transparent animate-pulse">
                 Experiences
               </span>
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl leading-relaxed text-balance">
+            <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl leading-relaxed text-balance font-medium">
               Full-stack developer & designer building premium web solutions. I transform ideas into beautiful,
-              functional digital products that drive results.
+              functional digital products that drive real results.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-6">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-background font-semibold rounded-lg hover:shadow-xl hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-105 w-fit"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-cyan text-background font-black text-lg rounded-lg hover:shadow-2xl hover:shadow-neon-purple/50 transition-all duration-300 hover:scale-110 w-fit group"
             >
               View My Work
-              <ArrowRight size={20} />
+              <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-neon-purple/50 text-foreground font-semibold rounded-lg hover:bg-neon-purple/10 transition-all duration-300 w-fit"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-neon-purple text-foreground font-black text-lg rounded-lg hover:bg-neon-purple/10 transition-all duration-300 hover:scale-110 w-fit"
             >
               Let&apos;s Talk
             </a>
