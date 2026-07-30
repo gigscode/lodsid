@@ -79,16 +79,16 @@ export default function PortfolioPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-2xl">
-              From full-stack web apps and AI-powered platforms to brand design, video content, and graphic catalogues — here&apos;s a selection of what I&apos;ve created across 10+ years of building.
+              From full-stack web apps and landing pages to brand design, UGC video content, and graphic catalogues — a selection of 50+ products shipped across 10+ years of building.
             </p>
 
             {/* Stats row */}
             <div className="flex flex-wrap gap-8 pt-2">
               {[
+                { num: "50+", label: "Products Shipped" },
                 { num: "10+", label: "Web Apps Built" },
+                { num: "4+", label: "Video Projects" },
                 { num: "2", label: "Design Catalogues" },
-                { num: "3+", label: "Video Projects" },
-                { num: "0→Shipped", label: "Every Single Time" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black text-white leading-none">{s.num}</p>
