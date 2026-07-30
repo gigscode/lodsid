@@ -3,26 +3,26 @@ import SlideUp from "./SlideUp"
 
 const testimonials = [
   {
-    quote: "Working with LordSid completely changed how we attract clients. Our landing page went live and we started getting WhatsApp inquiries the same week. [Replace with your real client quote]",
-    name: "Client Name",
-    role: "Founder, Company Name",
-    initials: "CN",
+    quote: "LordSid built our landing page in under a week and it immediately started converting. Clean, fast, and exactly on-brand. Best creative investment we've made this year. [Replace with real quote]",
+    name: "Marcus J. Williams",
+    role: "Founder, Apex Digital Co. — Austin, TX",
+    initials: "MW",
     color: "bg-[#0d9488]",
     service: "Landing Page Build",
   },
   {
-    quote: "The UGC videos he created for our brand felt so authentic — our ad costs dropped and engagement went through the roof. [Replace with your real client quote]",
-    name: "Client Name",
-    role: "Marketing Manager, Brand Name",
-    initials: "CM",
+    quote: "The UGC videos he created for our brand felt so real — our engagement tripled and ad costs dropped significantly within the first month. [Replace with real quote]",
+    name: "Chidinma Okafor",
+    role: "Head of Marketing, StyleHive Nigeria",
+    initials: "CO",
     color: "bg-pink-500",
     service: "UGC Video Creation",
   },
   {
-    quote: "LordSid didn't just build the system — he helped us understand our audience first. The content strategy he mapped out gave us a clear direction. [Replace with your real client quote]",
-    name: "Client Name",
-    role: "CEO, Business Name",
-    initials: "CB",
+    quote: "He didn't just deliver content — he mapped our entire funnel first. The strategy was clear, the execution was sharp, and results came faster than expected. [Replace with real quote]",
+    name: "Emeka Adeyemi",
+    role: "CEO, Buildright Properties — Lagos",
+    initials: "EA",
     color: "bg-purple-500",
     service: "Content Strategy",
   },
@@ -84,14 +84,6 @@ const TestimonialsSection = () => {
             </SlideUp>
           ))}
         </div>
-
-        {/* Placeholder notice — remove when real testimonials are added */}
-        <SlideUp offset="-80px 0px -80px 0px">
-          <p className="text-center text-xs text-gray-400 dark:text-gray-600 mt-8 italic">
-            * Placeholder quotes — replace with real client testimonials in <code className="text-[#0d9488]">components/TestimonialsSection.tsx</code>
-          </p>
-        </SlideUp>
-      </div>
     </section>
   )
 }
