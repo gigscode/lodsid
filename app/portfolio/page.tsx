@@ -1,5 +1,6 @@
 import ProjectsSection from "../../components/ProjectsSection"
 import MediaSection from "../../components/MediaSection"
+import AboutSection from "../../components/AboutSection"
 import Link from "next/link"
 
 export const metadata = {
@@ -79,7 +80,7 @@ export default function PortfolioPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-2xl">
-              From full-stack web apps and landing pages to brand design, UGC video content, and graphic catalogues — a selection of 50+ products shipped across 10+ years of building.
+              From full-stack web apps and landing pages to brand design, UGC video content, and graphic catalogues — 50+ products shipped across 10+ years of building.
             </p>
 
             {/* Stats row */}
@@ -107,6 +108,9 @@ export default function PortfolioPage() {
 
       {/* Media: videos + catalogues */}
       <MediaSection />
+
+      {/* About — who built all this */}
+      <AboutSection />
 
       {/* Bottom CTA */}
       <section className="bg-[#0a0a0a] border-t border-white/10 py-20 px-4 sm:px-6">

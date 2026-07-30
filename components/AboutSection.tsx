@@ -72,7 +72,7 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { num: "10+", label: "Years Experience" },
-                  { num: "30+", label: "Projects Shipped" },
+                  { num: "50+", label: "Products Shipped" },
                   { num: "500+", label: "People Trained" },
                   { num: "3", label: "Companies Founded" },
                 ].map((s) => (

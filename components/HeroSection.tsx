@@ -70,7 +70,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-6 py-1 animate-fade-up delay-500">
               {[
                 { num: "10+", label: "Years Building" },
-                { num: "30+", label: "Projects Shipped" },
+                { num: "50+", label: "Products Shipped" },
                 { num: "3",   label: "Companies Founded" },
                 { num: "500+", label: "People Trained" },
               ].map((s) => (

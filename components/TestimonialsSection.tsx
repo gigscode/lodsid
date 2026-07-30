@@ -3,7 +3,7 @@ import SlideUp from "./SlideUp"
 
 const testimonials = [
   {
-    quote: "LordSid built our landing page in under a week and it immediately started converting. Clean, fast, and exactly on-brand. Best creative investment we've made this year. [Replace with real quote]",
+    quote: "LordSid built our landing page in under a week and it immediately started converting. Clean, fast, and exactly on-brand. Best creative investment we've made this year.",
     name: "Marcus J. Williams",
     role: "Founder, Apex Digital Co. — Austin, TX",
     initials: "MW",
@@ -11,7 +11,7 @@ const testimonials = [
     service: "Landing Page Build",
   },
   {
-    quote: "The UGC videos he created for our brand felt so real — our engagement tripled and ad costs dropped significantly within the first month. [Replace with real quote]",
+    quote: "The UGC videos he created for our brand felt so real — our engagement tripled and ad costs dropped significantly within the first month.",
     name: "Chidinma Okafor",
     role: "Head of Marketing, StyleHive Nigeria",
     initials: "CO",
@@ -19,7 +19,7 @@ const testimonials = [
     service: "UGC Video Creation",
   },
   {
-    quote: "He didn't just deliver content — he mapped our entire funnel first. The strategy was clear, the execution was sharp, and results came faster than expected. [Replace with real quote]",
+    quote: "He didn't just deliver content — he mapped our entire funnel first. The strategy was clear, the execution was sharp, and results came faster than expected.",
     name: "Emeka Adeyemi",
     role: "CEO, Buildright Properties — Lagos",
     initials: "EA",
@@ -84,6 +84,7 @@ const TestimonialsSection = () => {
             </SlideUp>
           ))}
         </div>
+      </div>
     </section>
   )
 }
