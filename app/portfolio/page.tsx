@@ -86,9 +86,9 @@ export default function PortfolioPage() {
             <div className="flex flex-wrap gap-8 pt-2">
               {[
                 { num: "50+", label: "Products Shipped" },
-                { num: "10+", label: "Web Apps Built" },
-                { num: "4+", label: "Video Projects" },
-                { num: "2", label: "Design Catalogues" },
+                { num: "81+", label: "Web Apps Built" },
+                { num: "44+", label: "Video Projects" },
+                { num: "45", label: "Design Catalogues" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black text-white leading-none">{s.num}</p>
