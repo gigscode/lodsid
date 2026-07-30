@@ -3,12 +3,12 @@ import { useState } from "react"
 import SlideUp from "./SlideUp"
 
 const projectTypes = [
-  "Web App / Platform",
-  "Brand Identity & Design",
-  "AI / Automation System",
+  "Landing Page Build",
+  "UGC Video Content (9:16)",
   "Content Strategy & Funnel",
-  "Video Production",
-  "Customer Acquisition System",
+  "Brand Identity & Design",
+  "AI-Powered Content System",
+  "Web App / Platform",
   "Full Creative Package",
   "Other / Not Sure Yet",
 ]

@@ -16,6 +16,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Work", page: "problem" },
   { label: "Services", page: "services" },
   { label: "Results", page: "cases" },
+  { label: "Reviews", page: "testimonials" },
   { label: "About", page: "about" },
   { label: "Contact", page: "contact" },
 ]

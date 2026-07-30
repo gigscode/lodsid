@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata = {
+  metadataBase: new URL("https://lordsid.com"),
   title: "LordSid — Creative Builder, Designer & AI Systems Architect",
   description:
     "LordSid crafts digital experiences — web apps, AI systems, design, and content — built to move people and drive results.",

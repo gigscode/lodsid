@@ -7,14 +7,14 @@ const tools = [
   "Tailwind CSS",
   "OpenAI API",
   "LangChain",
-  "WhatsApp Business API",
-  "GoHighLevel CRM",
-  "Notion CRM",
   "Make (Integromat)",
   "Zapier",
   "Midjourney",
   "ElevenLabs",
   "Runway ML",
+  "CapCut",
+  "Figma",
+  "Notion",
 ]
 
 const AboutSection = () => {
@@ -31,18 +31,18 @@ const AboutSection = () => {
                   Who I Am
                 </span>
                 <h2 className="text-4xl sm:text-5xl font-black text-[#0a0a0a] dark:text-white leading-tight">
-                  The Person<br />
-                  <span className="text-[#0d9488]">Behind the Work.</span>
+                  Here to Solve<br />
+                  <span className="text-[#0d9488]">Your Problem.</span>
                 </h2>
               </div>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                I&apos;m <span className="font-black text-[#0a0a0a] dark:text-white">LordSid</span> — a multi-disciplinary creative based in Nigeria. I build digital products, design brands, engineer AI systems, and craft content strategies that move people from curious to committed.
+                I&apos;m <span className="font-black text-[#0a0a0a] dark:text-white">LordSid</span> — a multi-disciplinary creative based in Nigeria, working with brands and businesses globally. If you need a landing page that converts, UGC content that feels real, an AI system that runs in the background, or a content strategy that actually drives leads — this is where that gets built.
               </p>
               <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-                My work lives at the intersection of aesthetics and engineering. I think like a designer, build like an engineer, and sell like a strategist. That combination is rare — and it shows in every project I touch.
+                I don&apos;t just deliver files. I help you think through the right problem first — then build the solution that fits your market, your budget, and your goals. Remote or local, I adapt to how you work.
               </p>
               <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-                Over 10+ years I&apos;ve shipped apps, launched brands, founded companies, and trained hundreds of people in tech. I don&apos;t just execute — I help you think through the right problem to solve first.
+                Over 10+ years I&apos;ve shipped apps, built brands, launched companies, and trained hundreds of people in tech and AI. That experience means less guesswork and faster results for you.
               </p>
 
               {/* CTA */}
@@ -87,11 +87,11 @@ const AboutSection = () => {
               <div className="space-y-3">
                 <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">My Disciplines</p>
                 {[
-                  { label: "UI/UX & Brand Design", color: "bg-[#0d9488]" },
-                  { label: "Full-Stack Development", color: "bg-blue-500" },
+                  { label: "Landing Page Design & Build", color: "bg-[#0d9488]" },
+                  { label: "UGC Video Creation (9:16)", color: "bg-pink-500" },
                   { label: "AI & Automation Engineering", color: "bg-purple-500" },
-                  { label: "Content & Video Production", color: "bg-orange-500" },
-                  { label: "Customer Acquisition Systems", color: "bg-green-500" },
+                  { label: "Content Strategy & Funnels", color: "bg-orange-500" },
+                  { label: "Brand Identity & UI/UX", color: "bg-blue-500" },
                 ].map((f) => (
                   <div key={f.label} className="flex items-center gap-3">
                     <span className={`w-2 h-2 rounded-full ${f.color} flex-shrink-0`} />

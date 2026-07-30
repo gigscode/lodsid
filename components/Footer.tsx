@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <p className="text-2xl font-black text-white">LordSid</p>
             <p className="text-xs text-gray-500 mt-1 max-w-xs">
-              Creative Builder — designing and engineering digital products, brands, and AI systems.
+              Landing pages, UGC video, content strategy & brand design — built to convert.
             </p>
           </div>
 
@@ -22,6 +22,7 @@ const Footer = () => {
               { label: "Work", to: "problem" },
               { label: "Services", to: "services" },
               { label: "Results", to: "cases" },
+              { label: "Reviews", to: "testimonials" },
               { label: "About", to: "about" },
               { label: "Contact", to: "contact" },
             ].map((link) => (

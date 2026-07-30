@@ -35,26 +35,26 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight text-[#0a0a0a] dark:text-white animate-fade-up delay-200">
-              I Design.{" "}
-              <span className="animate-shimmer-text">I Build.</span>
+              I Help Brands{" "}
+              <span className="animate-shimmer-text">Grow Faster</span>
               <br />
-              I Make Things{" "}
-              <span className="animate-shimmer-text">Actually Work.</span>
+              Using AI, Content{" "}
+              <span className="animate-shimmer-text">&amp; Strategy.</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed animate-fade-up delay-300">
-              I&apos;m LordSid — a creative builder who crafts digital products, AI-powered systems, and visual identities that don&apos;t just look good, they convert.
+              I&apos;m LordSid — I build high-converting landing pages, create UGC video content, design AI-powered systems, and craft content strategies that turn attention into revenue. Remote-ready. Nigeria-based.
             </p>
 
             {/* Discipline tags */}
             <div className="flex flex-wrap gap-2 animate-fade-up delay-400">
               {[
-                "Web Development",
+                "Landing Pages",
+                "UGC Video",
                 "AI Automation",
+                "Content Strategy",
                 "Brand Design",
-                "Video & Content",
-                "Customer Systems",
               ].map((tag, i) => (
                 <span
                   key={tag}

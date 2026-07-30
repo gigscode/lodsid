@@ -4,32 +4,40 @@ import SlideUp from "./SlideUp"
 const pillars = [
   {
     step: "01",
-    title: "Brand Identity & Design",
-    desc: "Visual identity, UI/UX design, and graphic assets that make your brand impossible to ignore — crafted to match your value and attract your ideal audience.",
+    title: "High-Converting Landing Pages",
+    desc: "Focused, fast-loading landing pages engineered to convert — for product launches, lead gen, events, and service offers. Every element earns its place.",
     color: "text-[#0d9488]",
     border: "border-[#0d9488]",
     bg: "bg-[#0d9488]/10",
   },
   {
     step: "02",
-    title: "Web Apps & Digital Products",
-    desc: "Fast, scalable, and beautifully engineered web applications — from landing pages to full-stack platforms — built with the latest tech stack.",
-    color: "text-blue-400",
-    border: "border-blue-400",
-    bg: "bg-blue-400/10",
+    title: "UGC Video Creation",
+    desc: "Authentic 9:16 short-form video content for brands — testimonials, product demos, ads, and social content that feels real because it is. Built for TikTok, Reels & YouTube Shorts.",
+    color: "text-pink-400",
+    border: "border-pink-400",
+    bg: "bg-pink-400/10",
   },
   {
     step: "03",
     title: "AI & Automation Systems",
-    desc: "Custom AI workflows, WhatsApp bots, CRM pipelines, and automation sequences that remove repetitive work and scale your output.",
+    desc: "Custom AI workflows, content generation pipelines, and automation sequences that remove repetitive creative work and scale your output without hiring more people.",
     color: "text-purple-400",
     border: "border-purple-400",
     bg: "bg-purple-400/10",
   },
   {
     step: "04",
-    title: "Content & Customer Funnels",
-    desc: "Strategy, content creation, and distribution systems that drive attention from social media or search directly into a converting pipeline.",
+    title: "Brand Identity & Design",
+    desc: "Visual identity, UI/UX design, and graphic assets that make your brand impossible to ignore — crafted to match your value and attract your ideal audience.",
+    color: "text-blue-400",
+    border: "border-blue-400",
+    bg: "bg-blue-400/10",
+  },
+  {
+    step: "05",
+    title: "Content Strategy & Funnels",
+    desc: "Audience research, content planning, funnel mapping, and distribution systems that drive attention from social media or search directly into paying customers.",
     color: "text-orange-400",
     border: "border-orange-400",
     bg: "bg-orange-400/10",
@@ -55,7 +63,7 @@ const SolutionSection = () => {
           </div>
         </SlideUp>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pillars.map((p, i) => (
             <SlideUp key={i} offset="-80px 0px -80px 0px">
               <div className={`${p.bg} border ${p.border} border-opacity-30 rounded-3xl p-8 h-full`}>
@@ -81,15 +89,15 @@ const SolutionSection = () => {
             <p className="text-xs font-black uppercase tracking-widest text-[#0d9488] mb-4">The Creative-to-Revenue Flow</p>
             <div className="flex flex-wrap items-center gap-3 text-sm font-bold text-gray-300">
               {[
-                "Brand Identity",
+                "Content Strategy",
                 "→",
-                "Digital Product",
+                "Landing Page",
                 "→",
-                "Automated Funnel",
+                "UGC Video",
                 "→",
-                "Lead Capture",
+                "Organic / Paid Traffic",
                 "→",
-                "Follow-Up System",
+                "Lead Captured",
                 "→",
                 "Paying Customer",
               ].map((step, i) => (

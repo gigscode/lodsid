@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection"
 import ProblemSection from "../components/ProblemSection"
 import SolutionSection from "../components/SolutionSection"
 import CaseStudiesSection from "../components/CaseStudiesSection"
+import TestimonialsSection from "../components/TestimonialsSection"
 import ServicesSection from "../components/ServicesSection"
 import LeadMagnetSection from "../components/LeadMagnetSection"
 import AboutSection from "../components/AboutSection"
@@ -14,6 +15,7 @@ export default function Home() {
       <ProblemSection />
       <SolutionSection />
       <CaseStudiesSection />
+      <TestimonialsSection />
       <ServicesSection />
       <LeadMagnetSection />
       <AboutSection />

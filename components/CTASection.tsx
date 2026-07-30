@@ -20,7 +20,7 @@ const CTASection = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          Whether it&apos;s a product you want built, a brand you want defined, or a system that runs your business — I&apos;m here to make it happen with precision, creativity, and real results.
+          Whether it&apos;s a landing page that converts, UGC content for your brand, or a full content strategy that drives leads — I&apos;m here to make it happen with precision, creativity, and real results.
         </p>
 
         {/* Dual CTA */}

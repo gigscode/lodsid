@@ -3,6 +3,7 @@ import MediaSection from "../../components/MediaSection"
 import Link from "next/link"
 
 export const metadata = {
+  metadataBase: new URL("https://lordsid.com"),
   title: "Portfolio — LordSid",
   description:
     "A collection of web apps, AI systems, design work, and video content built by LordSid over 10+ years.",

@@ -3,6 +3,34 @@
 import Image from "next/image"
 import SlideUp from "./SlideUp"
 
+// ─── UGC VIDEOS ───────────────────────────────────────────────────────────────
+const ugcVideos = [
+  {
+    id: "ugc-sample-1",
+    title: "UGC Sample — Product Demo",
+    description: "Authentic short-form product demo for a consumer brand. Shot in 9:16 for TikTok & Reels.",
+    youtubeId: "YOUR_UGC_1", // replace with your YouTube ID
+    thumbnail: "/pers1.jpg",
+    platform: "TikTok / Reels",
+  },
+  {
+    id: "ugc-sample-2",
+    title: "UGC Sample — Testimonial Style",
+    description: "Raw, trust-building testimonial format designed to lower ad costs and increase CTR.",
+    youtubeId: "YOUR_UGC_2", // replace with your YouTube ID
+    thumbnail: "/pers2.jpg",
+    platform: "YouTube Shorts",
+  },
+  {
+    id: "ugc-sample-3",
+    title: "UGC Sample — Brand Story",
+    description: "Narrative-driven UGC for a service brand — hooks in 2 seconds, holds till the CTA.",
+    youtubeId: "YOUR_UGC_3", // replace with your YouTube ID
+    thumbnail: "/pers3.jpg",
+    platform: "TikTok / Reels",
+  },
+]
+
 // ─── VIDEOS ──────────────────────────────────────────────────────────────────
 // For each video:
 //   - id: unique identifier for shareable links
@@ -98,6 +126,82 @@ const MediaSection = () => {
   return (
     <section id="media" className="bg-white dark:bg-[#0a0a0a] py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto space-y-20">
+
+        {/* ── UGC Videos ── */}
+        <div>
+          <SlideUp offset="-100px 0px -100px 0px">
+            <div className="mb-12">
+              <p className="text-xs font-bold uppercase tracking-widest text-pink-400 mb-3">
+                UGC Content Creation
+              </p>
+              <h2 className="text-5xl sm:text-6xl font-black text-[#0a0a0a] dark:text-white leading-tight">
+                UGC Videos
+              </h2>
+              <p className="text-base text-gray-500 dark:text-gray-400 mt-3 max-w-xl">
+                Authentic 9:16 short-form content for brands — built for TikTok, Instagram Reels, and YouTube Shorts. Real feel. High conversion.
+              </p>
+            </div>
+          </SlideUp>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {ugcVideos.map((v, i) => {
+              const isPlaceholder = v.youtubeId.startsWith("YOUR_")
+              const thumb = v.thumbnail
+              const youtubeUrl = `https://www.youtube.com/watch?v=${v.youtubeId}`
+              return (
+                <SlideUp key={i} offset="-80px 0px -80px 0px">
+                  <div className="group border border-gray-100 dark:border-white/10 rounded-3xl overflow-hidden hover:border-pink-400/50 transition-colors bg-gray-50 dark:bg-white/5">
+                    {/* 9:16 aspect ratio wrapper */}
+                    <div className="relative overflow-hidden" style={{ aspectRatio: "9/16", maxHeight: "340px" }}>
+                      <Image
+                        src={thumb}
+                        alt={v.title}
+                        fill
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
+                        {isPlaceholder ? (
+                          <div className="text-center px-4">
+                            <div className="w-14 h-14 rounded-full bg-pink-500/80 flex items-center justify-center mx-auto mb-2">
+                              <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                            <p className="text-white text-xs font-black uppercase tracking-wider">Sample Coming Soon</p>
+                          </div>
+                        ) : (
+                          <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+                            <div className="w-14 h-14 rounded-full bg-pink-500 flex items-center justify-center shadow-lg">
+                              <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                          </a>
+                        )}
+                      </div>
+                      <span className="absolute top-3 left-3 bg-pink-500 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-lg">
+                        {v.platform}
+                      </span>
+                      <span className="absolute top-3 right-3 bg-black/60 text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded-lg">
+                        9:16
+                      </span>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-base font-black text-[#0a0a0a] dark:text-white mb-1">{v.title}</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">{v.description}</p>
+                      <a
+                        href="#contact"
+                        className="inline-block px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white text-xs font-black uppercase tracking-wider rounded-2xl transition-colors"
+                      >
+                        Get UGC Videos →
+                      </a>
+                    </div>
+                  </div>
+                </SlideUp>
+              )
+            })}
+          </div>
+        </div>
 
         {/* ── Videos ── */}
         <div>

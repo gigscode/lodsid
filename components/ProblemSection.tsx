@@ -8,14 +8,14 @@ const gaps = [
     desc: "You're doing great work but the world doesn't know it. Your online presence doesn't reflect the quality you deliver.",
   },
   {
-    icon: "📱",
-    title: "Leads Slip Through the Cracks",
-    desc: "Interested people reach out, you reply late or not at all. Without a system, warm leads go cold every single day.",
+    icon: "📄",
+    title: "Landing Page That Doesn't Convert",
+    desc: "People visit your site, read a bit, then leave. No clear offer, no hook, no reason to take the next step.",
   },
   {
-    icon: "📊",
-    title: "No Pipeline or CRM",
-    desc: "You don't know who you spoke with, who ghosted, or who's ready to buy. There's no visibility into your own business.",
+    icon: "🎥",
+    title: "No Video Content That Feels Real",
+    desc: "Polished ads get scrolled past. Brands that win use authentic UGC-style content — raw, relatable, and built to convert.",
   },
   {
     icon: "🎨",
@@ -23,14 +23,14 @@ const gaps = [
     desc: "Your visuals, messaging, and positioning don't communicate what you're really worth — so you attract the wrong clients.",
   },
   {
-    icon: "😴",
-    title: "Manual Everything",
-    desc: "Follow-ups, reminders, content — all done manually. Automation would handle 80% of this while you focus on your craft.",
+    icon: "📉",
+    title: "Content Gets Likes, Not Clients",
+    desc: "You post online but it doesn't lead anywhere. No CTA, no funnel, no strategy — just noise that converts no one.",
   },
   {
     icon: "🔇",
-    title: "Content With No Direction",
-    desc: "You post online but it doesn't lead anywhere. No CTA, no funnel, no strategy — just noise that converts no one.",
+    title: "No Strategy Behind the Work",
+    desc: "Execution without direction wastes time and budget. Without a content strategy, every piece of work is a guess.",
   },
 ]
 
@@ -76,7 +76,7 @@ const ProblemSection = () => {
                 Every gap has a creative solution that&apos;s already been built.
               </h3>
               <p className="text-sm text-gray-400 mt-2">
-                I&apos;ve designed and deployed these systems for brands and businesses across Nigeria. Let me show you what&apos;s possible.
+                I&apos;ve built landing pages, created UGC content, and designed strategies for brands and businesses across Nigeria. Let me show you what&apos;s possible.
               </p>
             </div>
             <a
