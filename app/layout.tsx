@@ -1,49 +1,66 @@
-import { Analytics } from '@vercel/analytics/next'
-import type { Metadata, Viewport } from 'next'
-import './globals.css'
+import "./globals.css"
+import { Inter } from "next/font/google"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import ThemeWrapper from "../components/ThemeWrapper"
 
-export const metadata: Metadata = {
-  title: 'LodSid - Fullstack Developer & Designer',
-  description: 'Premium portfolio showcasing innovative full-stack development and modern design. Available for freelance projects and collaborations.',
-  generator: 'v0.app',
-  keywords: 'fullstack developer, designer, web development, react, next.js, freelance',
-  openGraph: {
-    title: 'LodSid - Fullstack Developer & Designer',
-    description: 'Premium portfolio with innovative projects and modern design.',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@lodsid',
-  },
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  variable: "--font-inter",
+})
+
+export const metadata = {
+  title: "LordSid — Creative Builder, Designer & AI Systems Architect",
+  description:
+    "LordSid crafts digital experiences — web apps, AI systems, design, and content — built to move people and drive results.",
   icons: {
     icon: [
+      { url: "/lodsid.png", type: "image/png" },
+    ],
+    apple: "/lodsid.png",
+    shortcut: "/lodsid.png",
+  },
+  openGraph: {
+    title: "LordSid — Creative Builder, Designer & AI Systems Architect",
+    description:
+      "LordSid crafts digital experiences — web apps, AI systems, design, and content — built to move people and drive results.",
+    url: "https://lordsid.com",
+    siteName: "LordSid",
+    images: [
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: "/lodsid.png",
+        width: 1200,
+        height: 630,
+        alt: "LordSid — Creative Builder",
       },
     ],
-    apple: '/apple-icon.png',
+    locale: "en_NG",
+    type: "website",
   },
-}
-
-export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: '#ffffff',
-  width: 'device-width',
-  initialScale: 1,
+  twitter: {
+    card: "summary_large_image",
+    title: "LordSid — Creative Builder, Designer & AI Systems Architect",
+    description:
+      "LordSid crafts digital experiences — web apps, AI systems, design, and content — built to move people and drive results.",
+    creator: "@LordSid07",
+    images: ["/lodsid.png"],
+  },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-background text-foreground overflow-x-hidden">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+    <html suppressHydrationWarning className={inter.variable}>
+      <body className={inter.className}>
+        <ThemeWrapper>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeWrapper>
       </body>
     </html>
   )

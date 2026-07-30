@@ -1,19 +1,23 @@
-import Header from '@/components/header'
-import Hero from '@/components/hero'
-import Projects from '@/components/projects'
-import Skills from '@/components/skills'
-import Contact from '@/components/contact'
-import Footer from '@/components/footer'
+import HeroSection from "../components/HeroSection"
+import ProblemSection from "../components/ProblemSection"
+import SolutionSection from "../components/SolutionSection"
+import CaseStudiesSection from "../components/CaseStudiesSection"
+import ServicesSection from "../components/ServicesSection"
+import LeadMagnetSection from "../components/LeadMagnetSection"
+import AboutSection from "../components/AboutSection"
+import CTASection from "../components/CTASection"
 
 export default function Home() {
   return (
-    <main className="bg-background text-foreground">
-      <Header />
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+    <main className="pt-16">
+      <HeroSection />
+      <ProblemSection />
+      <SolutionSection />
+      <CaseStudiesSection />
+      <ServicesSection />
+      <LeadMagnetSection />
+      <AboutSection />
+      <CTASection />
     </main>
   )
 }
