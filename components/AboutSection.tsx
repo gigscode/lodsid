@@ -6,7 +6,6 @@ const tools = [
   "TypeScript",
   "Tailwind CSS",
   "OpenAI API",
-  "LangChain",
   "Make (Integromat)",
   "Zapier",
   "Midjourney",
@@ -89,7 +88,7 @@ const AboutSection = () => {
                 {[
                   { label: "Landing Page Design & Build", color: "bg-[#0d9488]" },
                   { label: "UGC Video Creation (9:16)", color: "bg-pink-500" },
-                  { label: "AI & Automation Engineering", color: "bg-purple-500" },
+                  { label: "AI-Powered Content Creation", color: "bg-purple-500" },
                   { label: "Content Strategy & Funnels", color: "bg-orange-500" },
                   { label: "Brand Identity & UI/UX", color: "bg-blue-500" },
                 ].map((f) => (

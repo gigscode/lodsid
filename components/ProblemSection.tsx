@@ -49,7 +49,7 @@ const ProblemSection = () => {
             <span className="text-red-400">Isn&apos;t Enough</span>
           </h2>
           <p className="text-base text-gray-400 max-w-2xl mb-16">
-            Talent without a system is just potential. The creatives and businesses that win are the ones who pair their craft with infrastructure — a brand that speaks, a pipeline that flows, and automation that works while they sleep.
+            Talent without a strategy is just potential. The creatives and businesses that win pair their craft with the right infrastructure — a brand that speaks, content that converts, and a clear funnel that turns attention into revenue.
           </p>
         </SlideUp>
 

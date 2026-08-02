@@ -20,8 +20,8 @@ const pillars = [
   },
   {
     step: "03",
-    title: "AI & Automation Systems",
-    desc: "Custom AI workflows, content generation pipelines, and automation sequences that remove repetitive creative work and scale your output without hiring more people.",
+    title: "AI-Powered Content Creation",
+    desc: "Using AI tools to generate scripts, repurpose content, build creative briefs, and produce more output in less time — without sacrificing quality or authenticity.",
     color: "text-purple-400",
     border: "border-purple-400",
     bg: "bg-purple-400/10",

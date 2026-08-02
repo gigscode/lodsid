@@ -52,7 +52,7 @@ const HeroSection = () => {
               {[
                 "Landing Pages",
                 "UGC Video",
-                "AI Automation",
+                "AI Tools",
                 "Content Strategy",
                 "Brand Design",
               ].map((tag, i) => (
